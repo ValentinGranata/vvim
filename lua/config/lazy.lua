@@ -18,6 +18,8 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { import = "lazyvim.plugins.extras.lang.json" }, -- add language support for json format
+    { import = "lazyvim.plugins.extras.ui.mini-animate" }, -- add ui animation like cursor tp animation
     -- import/override with your plugins
     { import = "plugins" },
   },
