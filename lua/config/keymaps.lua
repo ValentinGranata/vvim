@@ -1,5 +1,7 @@
 -- use jk to exit insert mode insted of esc
 vim.keymap.set("i", "jk", "<Esc>", { noremap = true, silent = true })
+-- yank all file
+vim.keymap.set("n", "ya", "ggVGy", { desc = "Copy entire file" })
 
 -- use oo to create new line after in normal mode
 vim.keymap.set("n", "oo", "o<Esc>", { desc = "New line below" })
